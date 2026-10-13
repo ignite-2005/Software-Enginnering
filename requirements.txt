@@ -1,0 +1,10 @@
+# Runtime dependencies for the voice-assistant application modules.
+#
+# The recognition, command-processing, control and error-handling modules are
+# deliberately stdlib-only so the test suite runs on any machine and in CI
+# without audio hardware.
+#
+# Hardware-facing dependencies (microphone capture and the speech-to-text
+# engine, FR-01 / NFR-06) belong in requirements-hardware.txt, which is
+# installed only on the Raspberry Pi or a development machine with a
+# microphone.
